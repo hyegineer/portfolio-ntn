@@ -5,6 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <link href='http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <div id="app">
@@ -13,10 +17,10 @@
       <div class="header-inner">
         <div class="header-left">
           <h1 class="hd-logo">
-            <img src="" alt="">
+            <img src="assets/images/logo-color.svg" alt="">
           </h1>
           
-          <a href="#">클래스</a>
+          <a class="hd-nav" href="#">클래스</a>
         </div>
 
         <div class="header-right">
@@ -30,7 +34,8 @@
     <!-- section : main -->
     <section class="section-main">
       <div class="secm-ttl-grp">
-        <img src="#" alt="">
+        <img src="assets/images/symbol-color.svg" alt="" class="secm-symbol">
+
         <h2 class="secm-ttl">비대면 교육에 필요한 서비스가 한 곳에!</h2>
         <p class="secm-desc">이제껏 경험 못했던 쉽고 편리한 온택트 학습/평가 서비스,<br>
           넥스트온과 함께라면 당신의 교육이 달라질 거에요.
@@ -48,14 +53,17 @@
     <section class="section-2nd">
       <div class="sec2-inner">
         <figure class="sec2-img">
-          <img src="" alt="">
+          <img src="assets/images/img-main-2.png" alt="">
         </figure>
 
         <div class="sec2-ttl-grp">
           <h3 class="sec-ttl">
             <span>비대면 수업,</span>
             <span>질문부터 평가까지</span>
-            <span>손쉽게</span>
+            <span>
+              <span>손쉽게</span>
+              <img src="assets/images/txt-deco.svg" class="ttl-deco">
+            </span>
           </h3>
           <p class="sec-desc">
             넥스트 교실에 접속하면? <br>
@@ -72,20 +80,23 @@
       <div class="sec3-inner">
         <div class="sec3-ttl-grp">
           <h3 class="sec-ttl">
-            <span>Give and Take</span>
+            <span>
+              <span>Give and Take</span>
+              <img src="assets/images/txt-deco.svg" alt="" class="ttl-deco">
+            </span>
           </h3>
           
           <div class="sec3-ttl-under">
             <button class="spc-btn-bd" type="button">
               <i class="icon-person"></i>
               <span class="btn-txt">개인평가</span>
-              <span class="badge-in-btn"></span>
+              <span class="badge-in-btn">10</span>
             </button>
 
             <button class="spc-btn-bd active" type="button">
               <i class="icon-grp"></i>
               <span class="btn-txt">그룹평가</span>
-              <span class="badge-in-btn"></span>
+              <span class="badge-in-btn">10</span>
             </button>
           </div>
 
@@ -138,7 +149,10 @@
         <div class="sec4-ttl-grp">
           <h3 class="sec-ttl">
             <span>교수자도, 학습자도</span>
-            <span>편리하게</span>
+            <span>
+              <span>편리하게</span>
+              <img src="assets/images/txt-deco.svg" alt="" class="ttl-deco">
+            </span>
           </h3>
 
           <p class="sec-desc">
@@ -157,118 +171,10 @@
 
           <div class="swiper-grp">
             <h4 class="swiper-ttl">그룹관리</h4>
-            <span class="swiper-desc">group</span>
+            <p class="swiper-desc">group</p>
 
             <!-- 그룹관리-->
-            <div class="comp-manage-grp">
-              <div class="left">
-                <span class="ttl">내 그룹</span>
-                
-                <div class="list-name-grp">
-                  <div class="list-name">
-                    <i class="icon-grp"></i>
-                    <span class="name">넥스트팀</span>
-                  </div>
-
-                  <div class="list-grp">
-                    <div class="list">
-                      <div class="list-name-sm">
-                        <i class="icon-person"></i>
-                        <span class="name">간미연</span>
-                      </div>
-                      <span class="list-txt">미입력</span>
-                    </div>
-
-                    <div class="list">
-                      <div class="list-name-sm">
-                        <i class="icon-person"></i>
-                        <span class="name">최가희</span>
-                      </div>
-                      <span class="list-txt">넥스트온 컴퍼니 서울본사 마케팅A팀</span>
-                    </div>
-
-                    <div class="list">
-                      <div class="list-name-sm">
-                        <i class="icon-person"></i>
-                        <span class="name">양종혁</span>
-                      </div>
-                      <span class="list-txt">얼라잇랩 디자인팀</span>
-                    </div>
-
-                    <div class="list">
-                      <div class="list-name-sm">
-                        <i class="icon-person"></i>
-                        <span class="name">장수정</span>
-                      </div>
-                      <span class="list-txt">넥스트온 컴퍼니 서울본사 마케팅B팀</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="right">
-                <div class="comp-fold-list">
-                  <div class="comp-list type-normal">
-                    <div class="comp-name-grp">
-                      <i class="icon-grp"></i>
-                      <span class="name">실무3년팀</span>
-                    </div>
-      
-                    <div class="comp-gray-txt-grp">
-                      <span class="comp-gray-lbel">그룹명</span>
-                      <span class="comp-gray-txt">최유리</span>
-                    </div>
-      
-                    <div class="comp-gray-txt-grp">
-                      <span class="comp-gray-lbel">인원</span>
-                      <span class="comp-gray-txt">1명</span>
-                    </div>
-
-                    <i class="icon-fold"></i>
-                  </div>
-
-                  <div class="comp-list type-normal">
-                    <div class="comp-name-grp">
-                      <i class="icon-grp"></i>
-                      <span class="name">병아리신입팀</span>
-                    </div>
-      
-                    <div class="comp-gray-txt-grp">
-                      <span class="comp-gray-lbel">그룹명</span>
-                      <span class="comp-gray-txt">백슬기</span>
-                    </div>
-      
-                    <div class="comp-gray-txt-grp">
-                      <span class="comp-gray-lbel">인원</span>
-                      <span class="comp-gray-txt">4명</span>
-                    </div>
-
-                    <i class="icon-fold"></i>
-                  </div>
-
-                  <div class="comp-folding-list">
-                    <div class="list-sm">
-                      <div class="list-name-sm">
-                        <i class="icon-person"></i>
-                        <span class="name">백슬기</span>
-                      </div>
-  
-                      <span class="gray-txt">미입력</span>
-                    </div>
-                  
-
-                    <div class="list-sm">
-                      <div class="list-name-sm">
-                        <i class="icon-person"></i>
-                        <span class="name">백슬기</span>
-                      </div>
-  
-                      <span class="gray-txt">미입력</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <img src="assets/images/img-c-2.svg" alt="">
             <!-- 그룹관리 -->
           </div>
         </div>
@@ -280,18 +186,20 @@
     <section class="section-last">
       <div class="secl-ttl-grp">
         <p class="secl-ttl">지금, 넥스트온을 시작하세요.</p>
-        <button type="button">회원가입</button>
+        <button type="button" class="btn-gradi">회원가입</button>
       </div>
     </section>
     <!-- E section : last -->
 
     <!-- footer -->
     <footer class="footer">
-      <h6 class="ft-logo">
-        <img src="#" alt="">
-      </h6>
+      <div class="footer-inner">
+        <h6 class="ft-logo">
+          <img src="assets/images/logo-wh.svg" alt="">
+        </h6>
 
-      <span class="copyright">NextON. ALL RIGHTS RESERVED</span>
+        <span class="copyright">NextON. ALL RIGHTS RESERVED</span>
+      </div>
     </footer>
     <!-- E footer -->
   </div>

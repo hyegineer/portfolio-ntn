@@ -1,0 +1,322 @@
+/*
+  CSS 속성을 순서대로 정리하기
+  display.
+  list-style.
+  position.
+  float.
+  clear.
+  width / height.
+  padding / margin.
+  border / background.
+*/
+
+body, button {
+  letter-spacing: -0.5px;
+}
+
+/* ==== header ==== */
+.header {
+  width: 100%;
+  height: 60px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hd-logo {
+  margin-right: 30px;
+}
+
+.hd-nav {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 17px;
+}
+
+/* ==== buttons ==== */
+.btn-solid {
+  min-width: 94px;
+  height: 40px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #47E8BC;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-txt {
+  padding: 0%;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 400;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-gradi {
+  min-width: 224px;
+  height: 50px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(to right, #47E8BC, #00B5D2);
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(71, 232, 188, 0.4);
+}
+
+.spc-btn-bd {
+  position: relative;
+  min-width: 190px;
+  height: 60px;
+  border: 3px solid #E6E6E6;
+  border-radius: 10px;
+  background-color: white;
+  margin-right: 5px;
+  color: #787878;
+}
+
+.spc-btn-bd .btn-txt {
+  font-size: 20px;
+  color: inherit;
+}
+
+.spc-btn-bd.active {
+  color: #199482;
+  border-color: #47E8BC;
+  background-color: #E5F9F4;
+}
+
+.badge-in-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -18px;
+  right: 10px;
+  border-radius: 10px;
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 4px 8px #A8FFE6;
+  background: linear-gradient(45deg, #47E8BC, #00B5D2);
+  color: white;
+  font-size: 16px;
+}
+
+/* ==== section titles ==== */
+.sec-ttl {
+  font-size: 40px;
+  font-weight: 600;
+  color: #3C3C3C;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.sec-ttl > span {
+  display: block;
+  position: relative;
+  letter-spacing: -2px;
+}
+
+.ttl-deco {
+  vertical-align: middle;
+  position: relative;
+  left: -5px;
+  top: -3px;
+}
+
+.sec-desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* ==== section main ==== */
+.section-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 840px;
+  background-image: url(../images/img-main-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.secm-ttl-grp {
+  color: white;
+}
+
+.secm-symbol {
+  margin-bottom: 38px;
+}
+
+.secm-ttl {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.secm-desc {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.secm-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ==== section 2nd ==== */
+.section-2nd {
+  margin-bottom: 200px;  
+}
+
+.sec2-img {
+  width: 100%;
+  max-width: 740px;
+  position: relative;
+  left: -60px;
+  top: -45px;
+  margin-right: 58px;
+}
+
+.sec2-img img {
+  width: 100%;
+}
+
+.sec2-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==== section 3rd ==== */
+.section-3rd {
+  margin-bottom: 200px;
+}
+
+.sec3-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 35px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sec3-ttl-under {
+  margin: 15px 0 25px;
+}
+
+/* ==== section 4th ==== */
+.section-4th {
+  padding-bottom: 250px;
+}
+
+.sec4-ttl-grp {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.swiper-grp {
+  max-width: 1080px;
+  height: 450px;
+  border-radius: 30px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background: #FAFAFA;
+  text-align: center;
+}
+
+.swiper-ttl {
+  font-size: 30px;
+  font-weight: bold;
+  color: #3C3C3C;
+  margin-bottom: 10px;
+}
+
+.swiper-desc {
+  text-transform: uppercase;
+  color: #6456FF;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+/* ==== section last ==== */
+.section-last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 380px;
+  background-image: url(../images/img-main-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.secl-ttl-grp {
+  color: white;
+  text-align: center;
+}
+
+.secl-ttl {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* ==== footer ==== */
+.footer {
+  background-color: #3F3E4D;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer-inner {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ft-logo {
+  margin-bottom: 10px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #C8C8C8;
+}
